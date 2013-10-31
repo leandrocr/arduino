@@ -3,6 +3,7 @@ dht11 sensor;
 
 int ledVermelho   = 8;
 int ledVerde      = 9;
+int ledAmarelo    = 7;
 float temperatura = 0;
 float humidade    = 0;
 
@@ -10,6 +11,8 @@ void setup() {
   Serial.begin(9600);
   pinMode(ledVermelho, OUTPUT);
   pinMode(ledVerde, OUTPUT);
+  pinMode(ledAmarelo, OUTPUT);
+  digitalWrite(ledAmarelo, HIGH);    
 }
 
 void loop() {
